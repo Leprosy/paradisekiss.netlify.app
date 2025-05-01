@@ -49,6 +49,7 @@ body h1 {
 }
 
 .start.oaw {
+  text-shadow: 5px 5px 5px black;
   height: 25vh;
   /* header position and size */
   background-position-y: -50px;

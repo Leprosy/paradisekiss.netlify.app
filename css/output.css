@@ -209,6 +209,9 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
   .pt-15 {
     padding-top: calc(var(--spacing) * 15);
   }
@@ -219,16 +222,15 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
   .text-amber-200 {
     color: var(--color-amber-200);
+  }
+  .uppercase {
+    text-transform: uppercase;
   }
   .lg\:text-4xl {
     @media (width >= 64rem) {
@@ -290,6 +292,7 @@ body h1 {
   }
 }
 .start.oaw {
+  text-shadow: 5px 5px 5px black;
   height: 25vh;
   background-position-y: -50px;
   background-size: 1000px 160vh;
