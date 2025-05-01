@@ -1,10 +1,30 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Avenir";
+  src: url("css/AvenirNext-Regular.woff2") format("woff");
+}
+
+body {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+.main h3 {
+  @apply text-center uppercase mb-10 text-4xl;
+}
+.main p {
+  @apply mb-5 font-light;
+}
+.main a {
+  @apply text-amber-600 underline;
+}
+
 .start {
   background-image: url(../img/bg/paradise1.jpg);
   background-repeat: no-repeat;
   background-color: black;
 
   height: 100vh;
-  background-position-x: right;
   background-position-y: 0; /* initial position */
   background-size: 660px 100vh; /* initial size */
 
@@ -13,10 +33,10 @@
   top: 0;
 
   transition: height 0.5s, background-position-y 0.5s, background-size 0.5s;
-  /* 
+
   @media (min-width: 768px) {
-    background-size: 40% 100%;
-  } */
+    background-position-x: right;
+  }
 }
 
 .start.oaw {
