@@ -1,0 +1,31 @@
+.start {
+  background-image: url(../img/bg/paradise1.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+
+  height: 100vh;
+  background-position-x: right;
+  background-position-y: 0; /* initial position */
+  background-size: 660px 100vh; /* initial size */
+
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+
+  transition: height 0.5s, background-position-y 0.5s, background-size 0.5s;
+  /* 
+  @media (min-width: 768px) {
+    background-size: 40% 100%;
+  } */
+}
+
+.start.oaw {
+  height: 25vh;
+  /* header position and size */
+  background-position-y: -50px;
+  background-size: 1000px 160vh;
+
+  /* @media (min-width: 768px) {
+    background-size: 60% 400%;
+  } */
+}
