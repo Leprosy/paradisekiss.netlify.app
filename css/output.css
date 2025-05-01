@@ -11,6 +11,8 @@
     --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-black: #000;
     --spacing: 0.25rem;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-6xl: 3.75rem;
@@ -192,9 +194,6 @@
   .flex {
     display: flex;
   }
-  .h-\[100vh\] {
-    height: 100vh;
-  }
   .min-h-\[100vh\] {
     min-height: 100vh;
   }
@@ -216,6 +215,10 @@
   .text-center {
     text-align: center;
   }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
@@ -227,6 +230,12 @@
   .text-amber-200 {
     color: var(--color-amber-200);
   }
+  .lg\:text-4xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
   .lg\:text-8xl {
     @media (width >= 64rem) {
       font-size: var(--text-8xl);
@@ -236,10 +245,17 @@
 }
 @font-face {
   font-family: "Avenir";
-  src: url("css/AvenirNext-Regular.woff2") format("woff");
+  src: url("avenir.woff2") format("woff");
+}
+@font-face {
+  font-family: "Deco";
+  src: url("deco.ttf");
 }
 body {
   font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+body h1 {
+  font-family: Deco, Arial, Helvetica, sans-serif;
 }
 .main h3 {
   margin-bottom: calc(var(--spacing) * 10);
@@ -262,6 +278,7 @@ body {
   background-repeat: no-repeat;
   background-color: black;
   height: 100vh;
+  background-position-x: center;
   background-position-y: 0;
   background-size: 660px 100vh;
   padding: 2rem;

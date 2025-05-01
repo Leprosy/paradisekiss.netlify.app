@@ -2,11 +2,19 @@
 
 @font-face {
   font-family: "Avenir";
-  src: url("css/AvenirNext-Regular.woff2") format("woff");
+  src: url("avenir.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "Deco";
+  src: url("deco.ttf");
 }
 
 body {
   font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+body h1 {
+  font-family: Deco, Arial, Helvetica, sans-serif;
 }
 
 .main h3 {
@@ -25,6 +33,7 @@ body {
   background-color: black;
 
   height: 100vh;
+  background-position-x: center;
   background-position-y: 0; /* initial position */
   background-size: 660px 100vh; /* initial size */
 
