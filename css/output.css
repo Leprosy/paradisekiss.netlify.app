@@ -170,6 +170,15 @@
   }
 }
 @layer utilities {
+  .sticky {
+    position: sticky;
+  }
+  .top-\[25vh\] {
+    top: 25vh;
+  }
+  .top-\[30vh\] {
+    top: 30vh;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -206,14 +215,29 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
   .pt-15 {
     padding-top: calc(var(--spacing) * 15);
+  }
+  .pt-\[25vh\] {
+    padding-top: 25vh;
+  }
+  .pt-\[30vh\] {
+    padding-top: 30vh;
+  }
+  .pt-\[35vh\] {
+    padding-top: 35vh;
   }
   .text-center {
     text-align: center;
@@ -254,6 +278,7 @@
   src: url("deco.ttf");
 }
 body {
+  scroll-behavior: smooth;
   font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 body h1 {
@@ -291,11 +316,18 @@ body h1 {
     background-position-x: right;
   }
 }
-.start.oaw {
+.oaw .start {
   text-shadow: 5px 5px 5px black;
   height: 25vh;
   background-position-y: -50px;
   background-size: 1000px 160vh;
+}
+.menu {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.oaw .menu {
+  opacity: 1;
 }
 @property --tw-font-weight {
   syntax: "*";

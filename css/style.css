@@ -11,6 +11,7 @@
 }
 
 body {
+  scroll-behavior: smooth;
   font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 body h1 {
@@ -48,7 +49,7 @@ body h1 {
   }
 }
 
-.start.oaw {
+.oaw .start {
   text-shadow: 5px 5px 5px black;
   height: 25vh;
   /* header position and size */
@@ -58,4 +59,13 @@ body h1 {
   /* @media (min-width: 768px) {
     background-size: 60% 400%;
   } */
+}
+
+.menu {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.oaw .menu {
+  opacity: 1;
 }

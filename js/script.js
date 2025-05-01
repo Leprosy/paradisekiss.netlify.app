@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // event handlers
   document.addEventListener("scroll", (ev) => {
     const scr = window.scrollY;
-    const isOaw = document.querySelector(".start").classList.contains("oaw");
+    const isOaw = document.querySelector("body").classList.contains("oaw");
     console.log("scroll", scr);
 
     if (noListener) return;
 
     if (scr > 290 && !isOaw) {
       noListener = true;
-      document.querySelector(".start").classList.add("oaw");
+      document.querySelector("body").classList.add("oaw");
 
       setTimeout(() => {
         if (window.scrollY < 10) {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (scr == 0 && isOaw) {
-      document.querySelector(".start").classList.remove("oaw");
+      document.querySelector("body").classList.remove("oaw");
     }
   });
 });
