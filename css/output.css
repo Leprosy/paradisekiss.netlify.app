@@ -315,7 +315,7 @@ body h1 {
   height: 100vh;
   background-position-x: center;
   background-position-y: 0;
-  background-size: 660px 100vh;
+  background-size: 50vh 100vh;
   padding: 2rem;
   position: sticky;
   top: 0;
@@ -335,7 +335,7 @@ body h1 {
   text-shadow: 5px 5px 5px black;
   height: 25vh;
   background-position-y: -50px;
-  background-size: 1000px 160vh;
+  background-size: 80vh 160vh;
 }
 .oaw .start h1 {
   @media (max-width: 768px) {

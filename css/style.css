@@ -25,7 +25,7 @@ body h1 {
   height: 100vh;
   background-position-x: center;
   background-position-y: 0; /* initial position */
-  background-size: 660px 100vh; /* initial size */
+  background-size: 50vh 100vh; /* initial size */
 
   padding: 2rem;
   position: sticky;
@@ -51,7 +51,7 @@ body h1 {
   height: 25vh;
   /* header position and size */
   background-position-y: -50px;
-  background-size: 1000px 160vh;
+  background-size: 80vh 160vh;
 
   /* @media (min-width: 768px) {
     background-size: 60% 400%;
@@ -82,7 +82,6 @@ body h1 {
 .content > div {
   @apply pt-[35vh] min-h-[100vh];
 }
-
 .content h3 {
   @apply text-center uppercase mb-10 text-4xl;
 }
