@@ -61,9 +61,9 @@ body h1 {
   background-position-y: -50px;
   background-size: 80vh 160vh;
 
-  /* @media (min-width: 768px) {
-    background-size: 60% 400%;
-  } */
+  @media (min-width: 768px) {
+    background-position-x: 40vw;
+  }
 }
 
 .oaw .bg h1 {
@@ -100,7 +100,7 @@ body h1 {
   @apply text-amber-600 underline;
 }
 .content img {
-  @apply border-4 border-amber-50 max-w-[80vw] lg:max-w-[50vw] block mx-auto;
+  @apply border-4 border-amber-50 max-w-[80vw] lg:max-w-[50vw] block mx-auto mb-8;
 }
 .content #social a {
   @apply text-amber-300;
