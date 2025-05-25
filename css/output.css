@@ -274,11 +274,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .lg\:ms-\[4rem\] {
-    @media (width >= 64rem) {
-      margin-inline-start: 4rem;
-    }
-  }
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -311,17 +306,23 @@ body {
 body h1 {
   font-family: Deco, Arial, Helvetica, sans-serif;
 }
-.start {
+.top {
+  position: sticky;
+  background-color: black;
+  top: 0;
+}
+.bg {
+  height: 100vh;
+  padding: 2rem;
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../img/bg/paradise1.jpg);
   background-repeat: no-repeat;
   background-color: black;
-  height: 100vh;
   background-position-x: center;
   background-position-y: 0;
   background-size: 50vh 100vh;
-  padding: 2rem;
-  position: sticky;
-  top: 0;
   transition: height 0.5s, background-position-y 0.5s, background-size 0.5s;
   @media (min-width: 768px) {
     background-position-x: right;
@@ -334,9 +335,9 @@ body h1 {
   left: 45vw;
   transition: opacity 0.5s;
 }
-.oaw .start {
-  text-shadow: 5px 5px 5px black;
+.oaw .bg {
   height: 25vh;
+  text-shadow: 5px 5px 5px black;
   background-position-y: -50px;
   background-size: 80vh 160vh;
 }
