@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-black: #000;
     --spacing: 0.25rem;
@@ -213,23 +214,26 @@
   .flex {
     display: flex;
   }
-  .grid {
-    display: grid;
+  .w-\[30vw\] {
+    width: 30vw;
   }
   .animate-bounce {
     animation: var(--animate-bounce);
   }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-start {
     align-items: flex-start;
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
@@ -248,10 +252,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -274,9 +274,9 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .lg\:grid-cols-3 {
+  .lg\:w-\[20vw\] {
     @media (width >= 64rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      width: 20vw;
     }
   }
   .lg\:text-4xl {
@@ -331,8 +331,9 @@ body h1 {
 .bottom-arrow {
   opacity: 1;
   position: absolute;
-  bottom: 10px;
-  left: 45vw;
+  bottom: 4rem;
+  text-align: center;
+  width: 100vw;
   transition: opacity 0.5s;
 }
 .oaw .bg {
@@ -341,14 +342,14 @@ body h1 {
   background-position-y: -50px;
   background-size: 80vh 160vh;
 }
-.oaw .start h1 {
+.oaw .bg h1 {
   @media (max-width: 768px) {
     width: calc(var(--spacing) * 2);
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
 }
-.oaw .start h2 {
+.oaw .bg h2 {
   @media (max-width: 768px) {
     width: calc(var(--spacing) * 2);
     font-size: var(--text-xl);
@@ -393,8 +394,11 @@ body h1 {
   border-width: 4px;
   border-color: var(--color-amber-50);
   @media (width >= 64rem) {
-    max-width: 60vw;
+    max-width: 50vw;
   }
+}
+.content #social a {
+  color: var(--color-amber-300);
 }
 @property --tw-font-weight {
   syntax: "*";

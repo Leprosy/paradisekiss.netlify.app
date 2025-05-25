@@ -46,8 +46,9 @@ body h1 {
 .bottom-arrow {
   opacity: 1;
   position: absolute;
-  bottom: 10px;
-  left: 45vw;
+  bottom: 4rem;
+  text-align: center;
+  width: 100vw;
   transition: opacity 0.5s;
 }
 .oaw .top {
@@ -65,12 +66,12 @@ body h1 {
   } */
 }
 
-.oaw .start h1 {
+.oaw .bg h1 {
   @media (max-width: 768px) {
     @apply w-2 text-4xl;
   }
 }
-.oaw .start h2 {
+.oaw .bg h2 {
   @media (max-width: 768px) {
     @apply w-2 text-xl;
   }
@@ -99,5 +100,8 @@ body h1 {
   @apply text-amber-600 underline;
 }
 .content img {
-  @apply border-4 border-amber-50 max-w-[80vw] lg:max-w-[60vw] block mx-auto;
+  @apply border-4 border-amber-50 max-w-[80vw] lg:max-w-[50vw] block mx-auto;
+}
+.content #social a {
+  @apply text-amber-300;
 }
