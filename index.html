@@ -9,9 +9,42 @@
 </head>
 
 <body>
-  <h1 class="text-3xl font-bold underline">
-    paradise kiss!
-  </h1>
+  <div class="flex h-[80vh] relative cursor-pointer">
+    <div
+      class="flex justify-center items-center bg-white bg-[url(../images/portada1.webp)] bg-no-repeat bg-left-bottom bg-size-[auto_60vw] lg:bg-size-[auto_40vw] h-[100%] w-[50vw]">
+      <h2 class="z-10 text-purple-800 text-3xl text-shadow-lg relative top-[15rem]">El Glamour</h2>
+    </div>
+    <div
+      class="flex justify-center items-center bg-black bg-[url(../images/portada2.webp)] bg-no-repeat bg-right-bottom bg-size-[auto_60vw] lg:bg-size-[auto_40vw] h-[100%] w-[50vw]">
+      <h2 class="z-10 text-purple-800 text-3xl text-shadow-lg relative top-[15rem]">El Deseo</h2>
+    </div>
+    <div class=" absolute top-[5vh] left-0 w-[100vw] flex justify-center">
+      <div>
+        <img src="images/logo-paradise.png" />
+        <p id="motto"
+          class="opacity-0 transition-opacity duration-[2000ms] text-red-700 text-2xl bg-black rounded-lg text-center py-2">
+          "No hago shows para
+          que me
+          vean... hago
+          arte para que no
+          me olviden."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="align-middle bg-gradient-to-r from-purple-600 via-purple-950 to-purple-600 h-[20vh]">
+    <div class="flex flex-col justify-center items-center h-[100%]">
+      <img src="images/logo-che.png" class="h-[3rem]" />
+      <img src="images/logo-buenos-mesa.png" height="10" class="h-[2rem]" />
+    </div>
+  </div>
+  <script>
+    setTimeout(() => {
+      const motto = document.querySelector('#motto')
+      motto.classList.remove('opacity-0')
+      motto.classList.add('opacity-100')
+    }, 1000)
+  </script>
 </body>
 
 </html>
