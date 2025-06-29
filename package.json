@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "tailwind": "npx @tailwindcss/cli -i ./css/source.css -o ./css/style.css --watch",
+    "dev": "live-server"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.5",
     "tailwindcss": "^4.1.5"

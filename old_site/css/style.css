@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Avenir";
+  src: url("avenir.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "Deco";
+  src: url("deco.ttf");
+}
+
+body {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+body h1 {
+  font-family: Deco, Arial, Helvetica, sans-serif;
+}
+
+.top {
+  /* height: 100vh; */
+  position: sticky;
+  background-color: black;
+  top: 0;
+}
+
+.bg {
+  height: 100vh;
+  padding: 2rem;
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url(../img/bg/paradise1.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position-x: center;
+  background-position-y: 0; /* initial position */
+  background-size: 50vh 100vh; /* initial size */
+  transition: height 0.5s, background-position-y 0.5s, background-size 0.5s;
+
+  @media (min-width: 768px) {
+    background-position-x: right;
+  }
+}
+.bottom-arrow {
+  opacity: 1;
+  position: absolute;
+  bottom: 4rem;
+  text-align: center;
+  width: 100vw;
+  transition: opacity 0.5s;
+}
+.oaw .top {
+  /* height: 25vh; */
+}
+.oaw .bg {
+  height: 25vh;
+  text-shadow: 5px 5px 5px black;
+  /* header position and size */
+  background-position-y: -50px;
+  background-size: 80vh 160vh;
+
+  @media (min-width: 768px) {
+    background-position-x: 40vw;
+  }
+}
+
+.oaw .bg h1 {
+  @media (max-width: 768px) {
+    @apply w-2 text-4xl;
+  }
+}
+.oaw .bg h2 {
+  @media (max-width: 768px) {
+    @apply w-2 text-xl;
+  }
+}
+.oaw .bottom-arrow {
+  opacity: 0;
+}
+.menu {
+  opacity: 0;
+  transition: opacity 2s;
+}
+.oaw .menu {
+  opacity: 1;
+}
+
+.content > div {
+  @apply pt-[35vh] min-h-[100vh];
+}
+.content h3 {
+  @apply text-center uppercase mb-10 text-4xl;
+}
+.content p {
+  @apply mb-5 font-light;
+}
+.content a {
+  @apply text-amber-600 underline;
+}
+.content img {
+  @apply border-4 border-amber-50 max-w-[80vw] lg:max-w-[50vw] block mx-auto mb-8;
+}
+.content #social a {
+  @apply text-amber-300;
+}
