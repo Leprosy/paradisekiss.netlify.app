@@ -32,6 +32,7 @@
     --text-8xl--line-height: 1;
     --font-weight-extralight: 200;
     --font-weight-light: 300;
+    --font-weight-medium: 500;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
     --animate-bounce: bounce 1s infinite;
@@ -250,11 +251,17 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
+  .mb-15 {
+    margin-bottom: calc(var(--spacing) * 15);
+  }
   .flex {
     display: flex;
   }
   .hidden {
     display: none;
+  }
+  .\[aspect-ratio\:1\.5\] {
+    aspect-ratio: 1.5;
   }
   .h-\[2rem\] {
     height: 2rem;
@@ -280,6 +287,9 @@
   .h-\[100vh\] {
     height: 100vh;
   }
+  .max-h-5 {
+    max-height: calc(var(--spacing) * 5);
+  }
   .w-\[30\%\] {
     width: 30%;
   }
@@ -295,8 +305,14 @@
   .w-\[80vw\] {
     width: 80vw;
   }
+  .w-\[100\%\] {
+    width: 100%;
+  }
   .w-\[100vw\] {
     width: 100vw;
+  }
+  .flex-\[1\] {
+    flex: 1;
   }
   .animate-bounce {
     animation: var(--animate-bounce);
@@ -393,6 +409,9 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
+  .\[object-fit\:cover\] {
+    object-fit: cover;
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
@@ -407,6 +426,9 @@
   }
   .align-middle {
     vertical-align: middle;
+  }
+  .font-sans {
+    font-family: var(--font-sans);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -438,6 +460,10 @@
   .font-extralight {
     --tw-font-weight: var(--font-weight-extralight);
     font-weight: var(--font-weight-extralight);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .text-amber-200 {
     color: var(--color-amber-200);
